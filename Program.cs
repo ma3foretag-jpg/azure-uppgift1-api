@@ -24,5 +24,5 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
-
+app.MapGet("/", () => "API fungerar på Azure");
 app.Run();
